@@ -1,1 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anta", sans-serif;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #5372f0;
+}
+.container{
+    width: 440px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);    
+}
+.container h2{
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.container .content{
+    margin: 25px 20px 35px;
+}
+.container .word{
+    user-select: none;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 24px;
+    margin-right: -24px;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+.content .details{
+    margin: 25px 0 20px;
+}
+.details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.details p b{
+    font-weight: 500;
+}
+.content input{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+.content input:focus{
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.08);
+}
+.content input::placeholder{
+    color: #aaa;
+}
+.content input:focus::placeholder{
+    color: #bfbfbf;
+}
+.content .buttons{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.buttons button{
+    font-family: "Madimi One", sans-serif;
+
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    width: calc(100% / 2 - 8px);
+    transition: all 0.3s ease;
+}
+.buttons button:active{
+    transform: scale(0.9);
+}
+.buttons .refresh-word{
+    background: #6c757d;
+}
+.buttons .refresh-word:hover{
+    background: #5f666d;
+}
+.buttons .check-word{
+    background: #5372f0;
+}
+.buttons .check-word:hover{
+    background: #2c52ed;
+}
